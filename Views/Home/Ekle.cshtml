@@ -1,0 +1,28 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Ekle";
+}
+
+<h1>Ekle</h1>
+
+<form asp-controller="Home" asp-action="Ekle" method="post">
+
+    <div>
+        <label asp-for="Adi"></label>
+        <input asp-for="Adi"/>
+    </div>
+    <div>
+        <label asp-for="Fiyat"></label>
+        <input asp-for="Fiyat" />
+    </div>
+    
+    <div>
+        <label asp-for="Kategori"></label>
+        <input asp-for="Kategori" />
+    </div>
+
+
+    <div>
+        <button type="submit"  class="btn btn-success">KAYDET</button>
+    </div>
+</form>   
